@@ -1938,7 +1938,7 @@ const projects = [
             'JavaScript'
         ],
         aiHint: 'portfolio website',
-        liveUrl: '#'
+        liveUrl: 'https://interactiveportfolio-website.vercel.app/'
     },
     {
         title: 'Time Series Data Visualization',

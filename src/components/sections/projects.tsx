@@ -31,7 +31,7 @@ const projects = [
     image: '/port.jpg',
     tags: ['Next.js', 'Vercel', 'Tailwind CSS', 'Framer Motion','CSS Modules','HTML','CSS','JavaScript'],
     aiHint: 'portfolio website',
-    liveUrl: '#',
+    liveUrl: 'https://interactiveportfolio-website.vercel.app/',
   },
   {
     title: 'Time Series Data Visualization',
