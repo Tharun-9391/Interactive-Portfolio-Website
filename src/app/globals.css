@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 84% 4%;
+    --card: 210 40% 100%;
+    --card-foreground: 222 84% 4%;
+    --popover: 210 40% 100%;
+    --popover-foreground: 222 84% 4%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 91%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 91%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 48 96% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+    --chart-1: 217 91% 60%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 160 80% 45%;
+    --chart-4: 217 70% 75%;
+    --chart-5: 38 80% 65%;
+    --radius: 0.8rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 65%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 28% 72%;
+    --accent: 38 92% 55%;
+    --accent-foreground: 48 96% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217 33% 25%;
+    --input: 217 33% 22%;
+    --ring: 217 91% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  section {
+    @apply py-16 sm:py-20 md:py-24;
+  }
+}
+
+@layer components {
+  .btn-glowing {
+    @apply relative overflow-hidden;
+  }
+  .btn-glowing::before {
+    content: '';
+    @apply absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-r from-transparent to-primary animate-[spin_4s_linear_infinite];
+    transform-origin: bottom right;
+  }
+  .btn-glowing::after {
+    content: '';
+    @apply absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-r from-transparent to-primary animate-[spin_4s_linear_infinite];
+    transform-origin: bottom right;
+    animation-delay: -2s;
+  }
+  .btn-glowing span {
+     @apply absolute inset-[2px] bg-background rounded-md z-10;
+  }
+  .btn-glowing div {
+    @apply relative z-20 text-primary;
+  }
+
+  /* Timeline styles */
+  .timeline { @apply relative pl-8; }
+  .timeline::before {
+    content: '';
+    @apply absolute top-0 left-3 w-0.5 h-full bg-primary/20;
+  }
+  .timeline-item { @apply relative mb-8; }
+  .timeline-dot {
+    @apply absolute -left-[38px] top-1 flex items-center justify-center w-8 h-8 rounded-full bg-primary/20 ring-8 ring-background;
+  }
+  .timeline-dot svg {
+    @apply w-5 h-5 text-primary;
+  }
+  
+  /* Photo Gallery Marquee */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .marquee {
+    animation: marquee 60s linear infinite;
+  }
+
+  @keyframes marquee-ltr {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+  .marquee-ltr {
+    animation: marquee-ltr 60s linear infinite;
+  }
+}
