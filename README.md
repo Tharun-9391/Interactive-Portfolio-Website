@@ -4,7 +4,7 @@ Welcome to the **Interactive Portfolio Website** — a fully responsive, dynamic
 
 ## 🚀 Demo
 
-[Click here to view live site](https://your-portfolio-link.com)  
+[Click here to view live site](https://chandatharun.vercel.app/)  
 *(Replace with your deployed site URL)*
 
 ---
