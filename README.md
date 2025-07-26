@@ -123,9 +123,9 @@ Inspired by various modern developer portfolios and open-source UI kits. Animati
 
 ## 📧 Contact
 
-- GitHub: [@yourusername](https://github.com/yourusername)  
-- LinkedIn: [yourname](https://linkedin.com/in/yourname)  
-- Email: yourmail@example.com
+- GitHub: [TharunTeja](https://github.com/Tharun-9391)  
+- LinkedIn: [TharunTeja](https://www.linkedin.com/in/chanda-tharunteja-277611258/)  
+- Email: chandatharunteja1@gmail.com
 
 ---
 
