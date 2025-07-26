@@ -129,10 +129,4 @@ Inspired by various modern developer portfolios and open-source UI kits. Animati
 
 ---
 
-## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-> 🚀 *Build your brand. Share your story. Stand out.* 🌟
